@@ -1,0 +1,34 @@
+//
+//  NewToDoView.swift
+//  ToDoList
+//
+//  Created by Cheryl Yu on 14/7/2025.
+//
+
+import SwiftUI
+
+struct NewToDoView: View {
+    var body: some View {
+        VStack {
+            Text("Task Title:")
+                .font(.title)
+                .fontWeight(.bold)
+            
+            TextField("Enter the task description...", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .padding()
+            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
+                Text("Is it important?")
+            }
+            Button("save") {
+                
+            }
+            .font(.title)
+            }
+        }
+        
+    }
+
+
+#Preview {
+    NewToDoView()
+}
